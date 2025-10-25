@@ -1,0 +1,83 @@
+{
+   "background": {
+      "service_worker": "js/service-worker.js",
+      "type": "module"
+   },
+   "action": {
+      "default_icon": {
+         "128": "images/icon-light-theme-128.png",
+         "16": "images/icon-light-theme-16.png",
+         "19": "images/icon-light-theme-19.png",
+         "32": "images/icon-light-theme-32.png",
+         "38": "images/icon-light-theme-38.png",
+         "48": "images/icon-light-theme-48.png",
+         "64": "images/icon-light-theme-64.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Redirector",
+      "theme_icons": [ {
+         "dark": "images/icon-light-theme-16.png",
+         "light": "images/icon-dark-theme-16.png",
+         "size": 16
+      }, {
+         "dark": "images/icon-light-theme-19.png",
+         "light": "images/icon-dark-theme-19.png",
+         "size": 19
+      }, {
+         "dark": "images/icon-light-theme-32.png",
+         "light": "images/icon-dark-theme-32.png",
+         "size": 32
+      }, {
+         "dark": "images/icon-light-theme-38.png",
+         "light": "images/icon-dark-theme-38.png",
+         "size": 38
+      }, {
+         "dark": "images/icon-light-theme-48.png",
+         "light": "images/icon-dark-theme-48.png",
+         "size": 48
+      }, {
+         "dark": "images/icon-light-theme-64.png",
+         "light": "images/icon-dark-theme-64.png",
+         "size": 64
+      }, {
+         "dark": "images/icon-light-theme-128.png",
+         "light": "images/icon-dark-theme-128.png",
+         "size": 128
+      } ]
+   },
+   "description": "Automatically redirect content based on user-defined rules.",
+   "icons": {
+      "128": "images/icon-light-theme-128.png",
+      "16": "images/icon-light-theme-16.png",
+      "19": "images/icon-light-theme-19.png",
+      "32": "images/icon-light-theme-32.png",
+      "38": "images/icon-light-theme-38.png",
+      "48": "images/icon-light-theme-48.png",
+      "64": "images/icon-light-theme-64.png"
+   },
+   "manifest_version": 3,
+   "name": "Redirector",
+   "options_ui": {
+      "page": "popup.html",
+      "open_in_tab": false
+   },
+   "permissions": [
+      "webNavigation",
+      "storage",
+      "tabs",
+      "notifications",
+      "declarativeNetRequest"
+   ],
+   "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+   ],
+   "web_accessible_resources": [
+      {
+         "resources": ["images/*"],
+         "matches": ["<all_urls>"]
+      }
+   ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0"
+}
