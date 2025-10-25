@@ -1,5 +1,6 @@
 ## Description
 Web browser extension (Vivaldi, Chrome, Opera) to redirect URLs based on regex or wildcard patterns.
+For any questions please email: extenhive@gmail.com
 
 ## Tribute
 This extension was developed with inspiration and partial code from Einar Egilsson  (https://github.com/einaregilsson/Redirector). 
